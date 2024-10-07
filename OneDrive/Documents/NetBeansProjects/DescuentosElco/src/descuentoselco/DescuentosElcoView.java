@@ -404,7 +404,7 @@ public class DescuentosElcoView extends FrameView {
 
     private void obtenerIvaBoton(ActionEvent evt){
         try{
-            this.iva = Double.parseDouble(evt.getActionCommand());
+            this.iva = Double.parseDouble(this.campoIvaPersonalizado.getText());
         }
         catch(NumberFormatException ex){
             this.iva = Double.parseDouble(evt.getActionCommand());
